@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Agreements">
+
+    <EditText
+        android:id="@+id/dayText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorRedS"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="day"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/done_agree"
+        app:layout_constraintEnd_toStartOf="@+id/mounthText"
+        app:layout_constraintStart_toEndOf="@+id/add_agree"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mounthText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorRedS"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="mounth"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/done_agree"
+        app:layout_constraintEnd_toStartOf="@+id/yearText"
+        app:layout_constraintStart_toEndOf="@+id/dayText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/yearText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorRedS"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="year"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/delete_agree"
+        app:layout_constraintEnd_toStartOf="@+id/agreementText"
+        app:layout_constraintStart_toEndOf="@+id/mounthText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/agreementText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorRedS"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="arrangement"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/delete_agree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yearText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_agree"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/tick"
+        app:layout_constraintBottom_toTopOf="@+id/idText"
+        app:layout_constraintEnd_toStartOf="@+id/dayText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/delete_agree"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="@color/colorBlueS"
+        android:fontFamily="serif-monospace"
+        android:text="delete"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/arrangsortagreem"
+        app:layout_constraintEnd_toStartOf="@+id/rewrite_aree"
+        app:layout_constraintStart_toEndOf="@+id/done_agree"
+        app:layout_constraintTop_toBottomOf="@+id/yearText" />
+
+    <Button
+        android:id="@+id/rewrite_aree"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="@color/colorBlueS"
+        android:fontFamily="serif-monospace"
+        android:text="rewrite"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/clear_aree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/delete_agree"
+        app:layout_constraintTop_toBottomOf="@+id/agreementText" />
+
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="54dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="@color/colorBlueS"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="id"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/idsortagreem"
+        app:layout_constraintEnd_toStartOf="@+id/done_agree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayText" />
+
+    <Button
+        android:id="@+id/clear_aree"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/korzina"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/arrangsortagreem"
+        app:layout_constraintTop_toBottomOf="@+id/delete_agree"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/idsortagreem"
+        android:layout_width="23dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="21dp"
+        android:background="@color/alfa"
+        android:fontFamily="serif-monospace"
+        android:text="id"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/datesortagreem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_agree" />
+
+    <Button
+        android:id="@+id/datesortagreem"
+        android:layout_width="104dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="21dp"
+        android:background="@color/alfa"
+        android:fontFamily="serif-monospace"
+        android:text="|   date   |"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/statussortagreem"
+        app:layout_constraintStart_toEndOf="@+id/idsortagreem"
+        app:layout_constraintTop_toBottomOf="@+id/idText" />
+
+    <Button
+        android:id="@+id/arrangsortagreem"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="21dp"
+        android:background="@color/alfa"
+        android:fontFamily="serif-monospace"
+        android:text="arrangement"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/clear_aree"
+        app:layout_constraintStart_toEndOf="@+id/statussortagreem"
+        app:layout_constraintTop_toBottomOf="@+id/delete_agree" />
+
+    <Button
+        android:id="@+id/done_agree"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="@color/colorBlueS"
+        android:fontFamily="serif-monospace"
+        android:text="done"
+        app:layout_constraintBottom_toTopOf="@+id/datesortagreem"
+        app:layout_constraintEnd_toStartOf="@+id/delete_agree"
+        app:layout_constraintStart_toEndOf="@+id/idText"
+        app:layout_constraintTop_toBottomOf="@+id/dayText" />
+
+    <Button
+        android:id="@+id/statussortagreem"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="21dp"
+        android:background="@color/alfa"
+        android:fontFamily="serif-monospace"
+        android:text="Status|"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/arrangsortagreem"
+        app:layout_constraintStart_toEndOf="@+id/datesortagreem"
+        app:layout_constraintTop_toBottomOf="@+id/delete_agree" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="184dp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/outputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="312dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

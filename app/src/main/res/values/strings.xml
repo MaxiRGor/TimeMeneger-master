@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Time manager</string>
+    <string name="title_activity_second">Schedule</string>
+    <string name="title_activity_third">Agreements</string>
+    <string name="title_activity_fourth">Reports</string>
+    <string name="title_activity_fifth">Wishes</string>
+</resources>
