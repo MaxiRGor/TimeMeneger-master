@@ -28,7 +28,7 @@
         <activity
             android:name=".Wishes"
             android:label="@string/title_activity_fifth" />
-        <activity android:name=".AdminActivity" />
+        <activity android:name=".SecretCodesActivity" />
         <activity android:name=".AccessActivity"></activity>
     </application>
 

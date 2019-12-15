@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class AdminActivity extends AppCompatActivity {
+public class SecretCodesActivity extends AppCompatActivity {
 
     Button addAdmin, clearAdmin;
     EditText pass;

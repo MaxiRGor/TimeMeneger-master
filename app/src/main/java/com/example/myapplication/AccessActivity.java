@@ -76,7 +76,7 @@ public class AccessActivity extends AppCompatActivity implements View.OnClickLis
                             // Sign in success, update UI with the signed-in user's information
                             Toast.makeText(AccessActivity.this, "Authentication success.",
                                     Toast.LENGTH_SHORT).show();
-                            Intent intent  = new Intent(AccessActivity.this, AdminActivity.class);
+                            Intent intent  = new Intent(AccessActivity.this, SecretCodesActivity.class);
                             startActivity(intent);
                         } else {
                             // If sign in fails, display a message to the user.
@@ -96,7 +96,7 @@ public class AccessActivity extends AppCompatActivity implements View.OnClickLis
                             // Sign in success, update UI with the signed-in user's information
                             Toast.makeText(AccessActivity.this, "Registration success.",
                                     Toast.LENGTH_SHORT).show();
-                            Intent intent  = new Intent(AccessActivity.this, AdminActivity.class);
+                            Intent intent  = new Intent(AccessActivity.this, SecretCodesActivity.class);
                             startActivity(intent);
                         } else {
                             // If sign in fails, display a message to the user.
