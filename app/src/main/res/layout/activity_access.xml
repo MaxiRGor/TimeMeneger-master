@@ -46,7 +46,7 @@
         android:layout_marginTop="31dp"
         android:layout_marginEnd="148dp"
         android:backgroundTint="@color/colorPrimary"
-        android:text="GO"
+        android:text="Log in"
         android:textColor="@color/ic_launcher_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,12 +54,10 @@
 
     <Button
         android:id="@+id/registration_btn"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="131dp"
-        android:layout_marginEnd="131dp"
         android:backgroundTint="@color/colorPrimary"
-        android:text="Registration"
+        android:text="@string/common_signin_button_text"
         android:textColor="@color/ic_launcher_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
