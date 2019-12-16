@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.myapplication.secret.SecretsActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -76,7 +77,7 @@ public class AccessActivity extends AppCompatActivity implements View.OnClickLis
                             // Sign in success, update UI with the signed-in user's information
                             Toast.makeText(AccessActivity.this, "Authentication success.",
                                     Toast.LENGTH_SHORT).show();
-                            Intent intent  = new Intent(AccessActivity.this, SecretCodesActivity.class);
+                            Intent intent  = new Intent(AccessActivity.this, SecretsActivity.class);
                             startActivity(intent);
                         } else {
                             // If sign in fails, display a message to the user.
@@ -96,7 +97,7 @@ public class AccessActivity extends AppCompatActivity implements View.OnClickLis
                             // Sign in success, update UI with the signed-in user's information
                             Toast.makeText(AccessActivity.this, "Registration success.",
                                     Toast.LENGTH_SHORT).show();
-                            Intent intent  = new Intent(AccessActivity.this, SecretCodesActivity.class);
+                            Intent intent  = new Intent(AccessActivity.this, SecretsActivity.class);
                             startActivity(intent);
                         } else {
                             // If sign in fails, display a message to the user.
